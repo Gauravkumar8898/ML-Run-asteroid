@@ -1,0 +1,22 @@
+kind: project
+metadata:
+  name: asteroid-nashtech
+  created: '2024-04-16T07:15:47.774325'
+spec:
+  functions:
+  - url: /home/nashtech/PycharmProjects/MLRun-asteroid/src/preprocess/data.py
+    name: asteroid-dataset
+    kind: job
+    image: mlrun/mlrun
+    handler: data_generator
+  workflows: []
+  artifacts: []
+  conda: ''
+  source: ''
+  desired_state: online
+  build:
+    commands: []
+    requirements: []
+  custom_packagers: []
+status:
+  state: online
